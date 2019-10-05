@@ -1,0 +1,233 @@
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/dev.css">
+
+<div id="dev_page_cont" class="dev_page_cont">
+  <div class="page_block dev_method_block dev_block_description">
+    <div class="dev_method_block_title"></div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_method_header" role="heading">
+        <a href="">Audio</a>
+        <span class="dev_method_crumbs"></span>
+        audio.get
+      </div>
+      <div class="dev_method_desc">
+      Returns a list of audio files of a user or community. </div>
+      <div class="dev_method_page_access">
+        <div class="dev_method_page_access_row clear_fix">
+          <div class="dev_method_page_access_row_icon dev_method_page_access_row_user_icon fl_l"></div>
+          <div class="dev_method_page_access_row_desc">
+            This method can be called with a <a href="">user token</a>
+            . <a href="">Access rights</a>
+            required: <b>audio</b>
+            .    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Parameters</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <table class="dev_params_table">
+        <tbody>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="owner_id">owner_id</td>
+            <td class="dev_param_desc fl_l">
+              ID of the user or community that owns the audio file. Use a negative value to designate a community ID. <br>
+              <div class="dev_param_opts">int (number), current user id is used by default</div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="album_id">album_id</td>
+            <td class="dev_param_desc fl_l">
+              Audio album ID. <br>
+              <div class="dev_param_opts">int (number)</div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="audio_ids">audio_ids</td>
+            <td class="dev_param_desc fl_l">
+              IDs of the audio files to return. <br>
+              <div class="dev_param_opts">list of comma-separated positive numbers</div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="need_user">need_user</td>
+            <td class="dev_param_desc fl_l">
+              <i>1</i>
+              — to return information about users who uploaded audio files <br>
+              <div class="dev_param_opts">
+                flag, either <b>1</b>
+                or <b>0</b>
+              </div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="offset">offset</td>
+            <td class="dev_param_desc fl_l">
+              Offset needed to return a specific subset of audio files. <br>
+              <div class="dev_param_opts">positive number</div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="count">count</td>
+            <td class="dev_param_desc fl_l">
+              Number of audio files to return. <br>
+              <div class="dev_param_opts">positive number</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Result</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_method_result">
+        Returns the total results number in <b>count</b>
+        field and an array of <a href="">objects describing audio</a>
+        in <b>items</b>
+        field. <br>
+        <br>
+        <blockquote>NOTE: Links to .mp3 files are bound to an IP address.</blockquote>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Errors</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <table class="dev_params_table dev_errors_table">
+        <tbody>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="19">19</td>
+            <td class="dev_param_desc fl_l">
+              Content blocked <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      Global errors can occur while running. See their descriptions <a href="">on this page</a>
+      .
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Linked methods</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_methods_sect_rows dev_methods_sect_simular">
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.getById</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Returns information about audio files by their IDs.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.getAlbums</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Returns a list of audio albums of a user or community.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.getLyrics</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Returns lyrics associated with an audio file.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.search</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Returns a list of audio matching the search criteria.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.getBroadcastList</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Returns a list of the user's friends and communities that are broadcasting music in their statuses.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.getRecommendations</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Returns a list of suggested audio files based on a user's playlist or a particular audio file.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.getPopular</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Returns a list of audio files from the "Popular".</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.getCount</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Returns the total number of audio files on a user or community page.</div>
+          <br class="clear">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block dev_console_block">
+    <div class="dev_method_block_title">Sample query</div>
+    <div class="dev_method_block_content" style="display: block;"></div>
+  </div>
+  <div class="page_block dev_method_block ">
+    <div class="dev_method_block_title">
+      Version history<a href="">Show all</a>
+    </div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_version clear_fix">
+        <span class="dev_version_num fl_l">5.12</span>
+        <div class="dev_versions_info fl_l">
+          <div>
+            New error types in audio.get, video.get. <br>New param for pagination: start_from and returning field next_from.      
+          </div>
+          <div class="dev_versions_methods">
+            <span class="dev_versions_field">Affects methods</span>
+            <a href="">audio.get</a>
+            , <a href="">video.get</a>
+            , <a href="">newsfeed.getComments</a>
+            , <a href="">newsfeed.get</a>
+            , <a href="">newsfeed.getRecommended</a>
+            , <a href="">newsfeed.search</a>
+          </div>
+        </div>
+      </div>
+      <div class="dev_version clear_fix">
+        <span class="dev_version_num fl_l">4.92</span>
+        <div class="dev_versions_info fl_l">
+          <div>
+          First element of result represents total count of elements </div>
+          <div class="dev_versions_methods">
+            <span class="dev_versions_field">Affects methods</span>
+            <a href="">audio.get</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

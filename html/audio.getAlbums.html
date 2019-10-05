@@ -1,0 +1,174 @@
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/dev.css">
+
+<div id="dev_page_cont" class="dev_page_cont">
+  <div class="page_block dev_method_block dev_block_description">
+    <div class="dev_method_block_title"></div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_method_header" role="heading">
+        <a href="">Audio</a>
+        <span class="dev_method_crumbs"></span>
+        audio.getAlbums
+      </div>
+      <div class="dev_method_desc">
+      Возвращает список альбомов аудиозаписей пользователя или группы. </div>
+      <div class="dev_method_page_access">
+        <div class="dev_method_page_access_row clear_fix">
+          <div class="dev_method_page_access_row_icon dev_method_page_access_row_user_icon fl_l"></div>
+          <div class="dev_method_page_access_row_desc">
+            Этот метод можно вызвать с <a href="">ключом доступа пользователя</a>
+            . Требуются <a href="">права доступа</a>
+            : <b>audio</b>
+            .
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Параметры</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <table class="dev_params_table">
+        <tbody>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="owner_id">owner_id</td>
+            <td class="dev_param_desc fl_l">
+              идентификатор пользователя или сообщества, у которого необходимо получить список альбомов с аудио. <br>
+              <div class="dev_param_opts">целое число, по умолчанию идентификатор текущего пользователя</div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="offset">offset</td>
+            <td class="dev_param_desc fl_l">
+              смещение, необходимое для выборки определенного подмножества альбомов. <br>
+              <div class="dev_param_opts">положительное число</div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="count">count</td>
+            <td class="dev_param_desc fl_l">
+              количество альбомов, которое необходимо вернуть. <br>
+              <div class="dev_param_opts">
+                положительное число, по умолчанию <b>50</b>
+                , максимальное значение <b>100</b>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Результат</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_method_result">
+        После успешного выполнения возвращает объект, содержащий число результатов в поле <b>count</b>
+        и массив объектов, описывающих альбомы, в поле <b>items</b>
+        . <br>
+        Каждый из этих объектов содержит следующие поля: 
+        <ul class="listing">
+          <li>
+            <span class="l">
+              <b>id</b>
+              — идентификатор альбома; 
+            </span>
+          </li>
+          <li>
+            <span class="l">
+              <b>owner_id</b>
+              — идентификатор владельца альбома; 
+            </span>
+          </li>
+          <li>
+            <span class="l">
+              <b>title</b>
+              — название альбома. 
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Коды ошибок</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <table class="dev_params_table dev_errors_table"></table>
+      В ходе выполнения могут произойти общие ошибки. Их описание находится на <a href="">отдельной странице</a>
+      .
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Связанные методы</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_methods_sect_rows dev_methods_sect_simular">
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.get</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Возвращает список аудиозаписей пользователя или сообщества.</div>
+          <br class="clear">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block dev_console_block">
+    <div class="dev_method_block_title">Пример запроса</div>
+    <div class="dev_method_block_content" style="display: block;"></div>
+  </div>
+  <div class="page_block dev_method_block ">
+    <div class="dev_method_block_title">
+      Актуальные версии<a href="">Показать все</a>
+    </div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_version clear_fix">
+        <span class="dev_version_num fl_l">5.9</span>
+        <div class="dev_versions_info fl_l">
+          <div>
+            Изменение поля <b>cid</b>
+            на <b>id</b>
+            в <b>newsfeed.getComments</b>
+            . <br>
+            в <b>notifications.get</b>
+            объект <b>video</b>
+            в новом формате. <br>
+            <b>friends.getLists</b>
+            список теперь возвращается в виде объекта с полем <b>count</b>
+            , <b>list_id</b>
+            заменен на <b>id</b>
+            . <br>
+            <b>board.getTopics</b>
+            опросы приходят в новом формате. <br>
+            <b>audio.getAlbums</b>
+            и <b>video.getAlbums</b>
+            – <b>id</b>
+            вместо <b>album_id</b>
+            . <br>
+            <b>audio.getRecommendations</b>
+            , <b>friends.getSuggestions</b>
+            – возвращается в форме списка. <br>
+            <b>groups.getMembers</b>
+            – результат в виде списка. <br>
+            <b>places.getCheckins</b>
+            – <b>user_id</b>
+            вместо <b>uid</b>
+            в объектах отметок. 
+          </div>
+          <div class="dev_versions_methods">
+            <span class="dev_versions_field">Влияет на методы </span>
+            <a href="">newsfeed.getComments</a>
+            , <a href="">notifications.get</a>
+            , <a href="">friends.getLists</a>
+            , <a href="">audio.getAlbums</a>
+            , <a href="">video.getAlbums</a>
+            , <a href="">audio.getRecommendations</a>
+            , <a href="">friends.getSuggestions</a>
+            , <a href="">groups.getMembers</a>
+            , <a href="">places.getCheckins</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,131 @@
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/dev.css">
+
+<div id="dev_page_cont" class="dev_page_cont">
+  <div class="page_block dev_method_block dev_block_description">
+    <div class="dev_method_block_title"></div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_method_header" role="heading">
+        <a href="">Audio</a>
+        <span class="dev_method_crumbs"></span>
+        audio.getLyrics
+      </div>
+      <div class="dev_method_desc">
+      Returns lyrics associated with an audio file. </div>
+      <div class="dev_method_page_access">
+        <div class="dev_method_page_access_row clear_fix">
+          <div class="dev_method_page_access_row_icon dev_method_page_access_row_user_icon fl_l"></div>
+          <div class="dev_method_page_access_row_desc">
+            This method can be called with a <a href="">user token</a>
+            . <a href="">Access rights</a>
+            required: <b>audio</b>
+            .
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Parameters</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <table class="dev_params_table">
+        <tbody>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="lyrics_id">lyrics_id</td>
+            <td class="dev_param_desc fl_l">
+              Lyrics ID (could be obtained with <a href="">audio.get</a>
+              , <a href="">audio.getById</a>
+              , or <a href="">audio.search</a>
+              methods). <br>
+              <div class="dev_param_opts">
+                int (number), <b>required parameter</b>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Result</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_method_result">
+        Returns a <b>lyrics</b>
+        object containing the following fields: 
+        <ul class="listing">
+          <li>
+            <span class="l">
+              <b>lyrics_id</b>
+              — Lyrics ID. 
+            </span>
+          </li>
+          <li>
+            <span class="l">
+              <b>text</b>
+              — Lyrics text. 
+            </span>
+          </li>
+        </ul>
+        <blockquote>
+          NOTE: <b>/n</b>
+          is used as a line break in the lyrics text.
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Errors</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <table class="dev_params_table dev_errors_table"></table>
+      Global errors can occur while running. See their descriptions <a href="">on this page</a>
+      .
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Linked methods</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_methods_sect_rows dev_methods_sect_simular">
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.get</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Returns a list of audio files of a user or community.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.getById</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Returns information about audio files by their IDs.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.search</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Returns a list of audio matching the search criteria.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.edit</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Edits an audio file on a user or community page.</div>
+          <br class="clear">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block dev_console_block">
+    <div class="dev_method_block_title">Sample query</div>
+    <div class="dev_method_block_content" style="display: block;"></div>
+  </div>
+</div>

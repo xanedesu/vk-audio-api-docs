@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/dev.css">
+
+<div id="dev_page_cont" class="dev_page_cont">
+  <div class="page_block dev_method_block dev_block_description">
+    <div class="dev_method_block_title"></div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_method_header" role="heading">
+        <a href="">Audio</a>
+        <span class="dev_method_crumbs"></span>
+        audio.delete   
+      </div>
+      <div class="dev_method_desc">
+      Удаляет аудиозапись со страницы пользователя или сообщества. </div>
+      <div class="dev_method_page_access">
+        <div class="dev_method_page_access_row clear_fix">
+          <div class="dev_method_page_access_row_icon dev_method_page_access_row_user_icon fl_l"></div>
+          <div class="dev_method_page_access_row_desc">
+            Этот метод можно вызвать с <a href="">ключом доступа пользователя</a>
+            . Требуются <a href="">права доступа</a>
+            : <b>audio</b>
+            .   
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Параметры</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <table class="dev_params_table">
+        <tbody>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="audio_id">audio_id</td>
+            <td class="dev_param_desc fl_l">
+              идентификатор аудиозаписи. <br>
+              <div class="dev_param_opts">
+                положительное число, <b>обязательный параметр</b>
+              </div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="owner_id">owner_id</td>
+            <td class="dev_param_desc fl_l">
+              идентификатор владельца аудиозаписи (пользователь или сообщество). <br>
+              <div class="dev_param_opts">
+                целое число, <b>обязательный параметр</b>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Результат</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_method_result">
+        После успешного выполнения возвращает <i>1</i>
+        .    
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Коды ошибок</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <table class="dev_params_table dev_errors_table"></table>
+      В ходе выполнения могут произойти общие ошибки. Их описание находится на <a href="">отдельной странице</a>
+      .
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Связанные методы</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_methods_sect_rows dev_methods_sect_simular">
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.restore</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Восстанавливает аудиозапись после удаления.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.add</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Копирует аудиозапись на страницу пользователя или группы.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.edit</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Редактирует данные аудиозаписи на странице пользователя или сообщества.</div>
+          <br class="clear">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block dev_console_block">
+    <div class="dev_method_block_title">Пример запроса</div>
+    <div class="dev_method_block_content" style="display: block;"></div>
+  </div>
+</div>

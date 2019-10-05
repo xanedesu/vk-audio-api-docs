@@ -1,0 +1,178 @@
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/dev.css">
+
+<div id="dev_page_cont" class="dev_page_cont">
+  <div class="page_block dev_method_block dev_block_description">
+    <div class="dev_method_block_title"></div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_method_header" role="heading">
+        <a href="">Audio</a>
+        <span class="dev_method_crumbs"></span>
+        audio.search
+      </div>
+      <div class="dev_method_desc">
+      Возвращает список аудиозаписей в соответствии с заданным критерием поиска. </div>
+      <div class="dev_method_page_access">
+        <div class="dev_method_page_access_row clear_fix">
+          <div class="dev_method_page_access_row_icon dev_method_page_access_row_user_icon fl_l"></div>
+          <div class="dev_method_page_access_row_desc">
+            Этот метод можно вызвать с <a href="">ключом доступа пользователя</a>
+            . Требуются <a href="">права доступа</a>
+            : <b>audio</b>
+            .
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Параметры</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <table class="dev_params_table">
+        <tbody>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="q">q</td>
+            <td class="dev_param_desc fl_l">
+              текст поискового запроса, например, <i>The Beatles</i>
+              . <br>
+              <div class="dev_param_opts">строка</div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="auto_complete">auto_complete</td>
+            <td class="dev_param_desc fl_l">
+              Если этот параметр равен <i>1</i>
+              , возможные ошибки в поисковом запросе будут исправлены. Например, при поисковом запросе <i>Иуфедуы</i>
+              поиск будет осуществляться по строке <i>Beatles</i>
+              . <br>
+              <div class="dev_param_opts">
+                флаг, может принимать значения <b>1</b>
+                или <b>0</b>
+              </div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="lyrics">lyrics</td>
+            <td class="dev_param_desc fl_l">
+              Если этот параметр равен <i>1</i>
+              , поиск будет производиться только по тем аудиозаписям, которые содержат тексты. <br>
+              <div class="dev_param_opts">
+                флаг, может принимать значения <b>1</b>
+                или <b>0</b>
+              </div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="performer_only">performer_only</td>
+            <td class="dev_param_desc fl_l">
+              Если этот параметр равен <i>1</i>
+              , поиск будет осуществляться только по названию исполнителя. <br>
+              <div class="dev_param_opts">
+                флаг, может принимать значения <b>1</b>
+                или <b>0</b>
+              </div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="sort">sort</td>
+            <td class="dev_param_desc fl_l">
+              Вид сортировки. <i>2</i>
+              — по популярности, <i>1</i>
+              — по длительности аудиозаписи, <i>0</i>
+              — по дате добавления. <br>
+              <div class="dev_param_opts">целое число</div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="search_own">search_own</td>
+            <td class="dev_param_desc fl_l">
+              <i>1</i>
+              — искать по аудиозаписям пользователя, <i>0</i>
+              — не искать по аудиозаписям пользователя. По умолчанию: <i>0</i>
+              . <br>
+              <div class="dev_param_opts">
+                флаг, может принимать значения <b>1</b>
+                или <b>0</b>
+              </div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="offset">offset</td>
+            <td class="dev_param_desc fl_l">
+              смещение, необходимое для выборки определенного подмножества аудиозаписей. По умолчанию: <i>0</i>
+              . <br>
+              <div class="dev_param_opts">положительное число</div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="count">count</td>
+            <td class="dev_param_desc fl_l">
+              количество аудиозаписей, информацию о которых необходимо вернуть. 
+              <blockquote>
+                Обратите внимание — даже при использовании параметра offset для получения информации доступны только первые <b>1000</b>
+                результатов. <br>
+              </blockquote>
+              <br>
+              <div class="dev_param_opts">
+                положительное число, по умолчанию <b>30</b>
+                , максимальное значение <b>300</b>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Результат</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_method_result">
+        После успешного выполнения возвращает объект, содержащий число результатов в поле <b>count</b>
+        и массив объектов <a href="">аудиозаписей</a>
+        в поле <b>items</b>
+        . 
+        <blockquote>
+          <b>Обратите внимание, что ссылки на mp3 привязаны к ip-адресу</b>
+          .
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Коды ошибок</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <table class="dev_params_table dev_errors_table"></table>
+      В ходе выполнения могут произойти общие ошибки. Их описание находится на <a href="">отдельной странице</a>
+      .
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Связанные методы</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_methods_sect_rows dev_methods_sect_simular">
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.getLyrics</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Возвращает текст аудиозаписи.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.get</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Возвращает список аудиозаписей пользователя или сообщества.</div>
+          <br class="clear">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block dev_console_block">
+    <div class="dev_method_block_title">Пример запроса</div>
+    <div class="dev_method_block_content" style="display: block;"></div>
+  </div>
+</div>

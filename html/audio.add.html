@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/dev.css">
+
+<div id="dev_page_cont" class="dev_page_cont">
+  <div class="page_block dev_method_block dev_block_description">
+    <div class="dev_method_block_title"></div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_method_header" role="heading">
+        <a href="">Audio</a>
+        <span class="dev_method_crumbs"></span>
+        audio.add
+      </div>
+      <div class="dev_method_desc">
+      Copies an audio file to a user page or community page. </div>
+      <div class="dev_method_page_access">
+        <div class="dev_method_page_access_row clear_fix">
+          <div class="dev_method_page_access_row_icon dev_method_page_access_row_user_icon fl_l"></div>
+          <div class="dev_method_page_access_row_desc">
+            This method can be called with a <a href="">user token</a>
+            . <a href="">Access rights</a>
+            required: <b>audio</b>
+            .
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Parameters</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <table class="dev_params_table">
+        <tbody>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="audio_id">audio_id</td>
+            <td class="dev_param_desc fl_l">
+              Audio file ID. <br>
+              <div class="dev_param_opts">
+                positive number, <b>required parameter</b>
+              </div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="owner_id">owner_id</td>
+            <td class="dev_param_desc fl_l">
+              ID of the user or community that owns the audio file. Use a negative value to designate a community ID. <br>
+              <div class="dev_param_opts">
+                int (number), <b>required parameter</b>
+              </div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="group_id">group_id</td>
+            <td class="dev_param_desc fl_l">
+              Community ID, needed when adding the audio file to a community (without minus). <br>
+              <div class="dev_param_opts">int (number)</div>
+            </td>
+          </tr>
+          <tr class="dev_param_row">
+            <td class="dev_param_name" title="album_id">album_id</td>
+            <td class="dev_param_desc fl_l">
+              Album ID. <br>
+              <div class="dev_param_opts">positive number</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Result</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_method_result">
+      Returns the ID of the created audio file. </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Errors</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <table class="dev_params_table dev_errors_table"></table>
+      Global errors can occur while running. See their descriptions <a href="">on this page</a>
+      .
+    </div>
+  </div>
+  <div class="page_block dev_method_block  dev_block_spoiler">
+    <div class="dev_method_block_title">Linked methods</div>
+    <div class="dev_method_block_content" style="display: block;">
+      <div class="dev_methods_sect_rows dev_methods_sect_simular">
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.delete</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Deletes an audio file from a user page or community page.</div>
+          <br class="clear">
+        </a>
+        <a href="" class="dev_methods_list_row">
+          <div class="dev_methods_list_name fl_l">
+            <span class="dev_methods_list_span">audio.edit</span>
+          </div>
+          <div class="dev_methods_list_access_icon fl_l"></div>
+          <div class="dev_methods_list_desc fl_l">
+          Edits an audio file on a user or community page.</div>
+          <br class="clear">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page_block dev_method_block dev_console_block">
+    <div class="dev_method_block_title">Sample query</div>
+    <div class="dev_method_block_content" style="display: block;"></div>
+  </div>
+</div>
