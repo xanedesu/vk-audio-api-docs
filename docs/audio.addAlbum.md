@@ -1,6 +1,6 @@
-## audio.getAlbum
+## audio.addAlbum
 
-description
+Creates an empty audio album.
 
 > This method can be called with a user token. [Access rights](https://vk.com/dev/permissions) required: **audio**.
 
@@ -9,13 +9,31 @@ description
 <table>
   <tr>
     <td>
+      <b>group_id</b>
     </td>
     <td>
+      Community ID (if the album will be created in a community).
+      <blockquote>
+        positive number
+      </blockquote>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>title</b>
+    </td>
+    <td>
+      Album title.
+      <blockquote>
+        string, <b>required parameter</b>
+      </blockquote>
     </td>
   </tr>
 </table>
 
 ### Result
+
+Returns the ID of the created album.
 
 ### Errors
 

@@ -1,6 +1,6 @@
 ## audio.deleteAlbum
 
-description
+Deletes an audio album.
 
 > This method can be called with a user token. [Access rights](https://vk.com/dev/permissions) required: **audio**.
 
@@ -9,13 +9,31 @@ description
 <table>
   <tr>
     <td>
+      <b>group_id</b>
     </td>
     <td>
+      ID of the community where the album is located.
+      <blockquote>
+        positive number
+      </blockquote>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>album_id</b>
+    </td>
+    <td>
+      Album ID.
+      <blockquote>
+        positive number, <b>required parameter</b>
+      </blockquote>
     </td>
   </tr>
 </table>
 
 ### Result
+
+In case of success returns <i>1</i>.
 
 ### Errors
 

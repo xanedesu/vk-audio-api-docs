@@ -1,6 +1,6 @@
 ## audio.getLyrics
 
-description
+Returns lyrics associated with an audio file.
 
 > This method can be called with a user token. [Access rights](https://vk.com/dev/permissions) required: **audio**.
 
@@ -9,13 +9,25 @@ description
 <table>
   <tr>
     <td>
+      <b>lyrics_id</b>
     </td>
     <td>
+      Lyrics ID (could be obtained with <a href="">audio.get</a>, <a href="">audio.getById</a>, or <a href="">audio.search</a> methods).
+      <blockquote>
+        int (number), <b>required parameter</b>
+      </blockquote>
     </td>
   </tr>
 </table>
 
 ### Result
+
+Returns a <b>lyrics</b> object containing the following fields:
+
+* **lyrics_id** — Lyrics ID.
+* **text** — Lyrics text.
+
+> NOTE: **/n** is used as a line break in the lyrics text.
 
 ### Errors
 
