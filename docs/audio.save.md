@@ -25,7 +25,7 @@
     <td>
       параметр, возвращаемый в результате <a href="">загрузки аудиофайла на сервер</a>.
       <blockquote>
-        atring, <b>required parameter</b>
+        string, <b>required parameter</b>
       </blockquote>
     </td>
   </tr>
