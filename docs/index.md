@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td>
-      <a href="audio.add.html">audio.add
+      <a href="audio.add.html">audio.add</a>
     </td>
     <td>
       Copies an audio file to a user page or community page.
