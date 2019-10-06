@@ -12,7 +12,7 @@ Returns lyrics associated with an audio file.
       <b>lyrics_id</b>
     </td>
     <td>
-      Lyrics ID (could be obtained with <a href="">audio.get</a>, <a href="">audio.getById</a>, or <a href="">audio.search</a> methods).
+      Lyrics ID (could be obtained with <a href="audio.get.html">audio.get</a>, <a href="audio.getById.html">audio.getById</a>, or <a href="audio.search.html">audio.search</a> methods).
       <blockquote>
         int (number), <b>required parameter</b>
       </blockquote>
