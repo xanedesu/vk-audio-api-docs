@@ -1,6 +1,6 @@
 ## audio.edit
 
-Редактирует данные аудиозаписи на странице пользователя или сообщества.
+Edits an audio file on a user or community page.
 
 > This method can be called with a [user token](https://vk.com/dev/access_token). [Access rights](https://vk.com/dev/permissions) required: **audio**.
 
