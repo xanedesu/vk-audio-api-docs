@@ -55,7 +55,7 @@ Copies an audio file to a user page or community page.
 
 ### Result
 
-Returns the ID of the created audio file (**aid**).
+Returns the ID of the created audio file.
 
 ### Errors
 
