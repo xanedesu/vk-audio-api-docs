@@ -1,8 +1,8 @@
 ## audio.getBroadcastList
 
-Возвращает список друзей и сообществ пользователя, которые транслируют музыку в статус.
+Returns a list of the user's friends and communities that are broadcasting music in their statuses.
 
-> This method can be called with a user token.
+> This method can be called with a [user token](https://vk.com/dev/access_token).
 
 ### Parameters
 
@@ -12,16 +12,16 @@
       <b>filter</b>
     </td>
     <td>
-      определяет, какие типы объектов необходимо получить. Возможные значения:
+      Types of objects to return:
       <ul>
         <li>
-          <i>friends</i> — только друзья; 
+          <i>friends</i> — only friends
         </li>
         <li>
-          <i>groups</i> — только сообщества; 
+          <i>groups</i> — only communities
         </li>
         <li>
-          <i>all</i> — друзья и сообщества. 
+          <i>all</i> — both friends and communities (default)
         </li>
       </ul>
       <blockquote>
@@ -34,7 +34,14 @@
       <b>active</b>
     </td>
     <td>
-      <i>1</i> — будут возвращены только друзья и сообщества, которые транслируют музыку в данный момент. По умолчанию возвращаются все.
+      <ul>
+        <li>
+          <i>1</i> — to return only friends and communities that are broadcasting at the moment.
+        </li>
+        <li>
+          <i>0</i> — to return all friends and communities (default).
+        </li>
+      </ul>
       <blockquote>
         flag, either <b>1</b> or <b>0</b>
       </blockquote>
@@ -44,7 +51,8 @@
 
 ### Result
 
-После успешного выполнения возвращает список объектов [друзей](https://vk.com/dev/objects/user) и [сообществ](https://vk.com/dev/objects/group) с дополнительным полем <b>status_audio</b> — объект [аудиозаписи](https://vk.com/dev/objects/audio), установленной в статус (если аудиозапись транслируется в текущей момент).
+Returns a list of [user](http://vk.com/dev/fields) and [community](http://vk.com/dev/fields_groups) objects, each with the following additional field:
+* **status_audio** — an [audio](https://vk.com/dev/objects/audio) object, which is set in status.
 
 ### Errors
 
