@@ -1,8 +1,8 @@
 ## audio.delete
 
-Удаляет аудиозапись со страницы пользователя или сообщества.
+Deletes an audio file from a user page or community page.
 
-> This method can be called with a user token. [Access rights](https://vk.com/dev/permissions) required: **audio**.
+> This method can be called with a [user token](https://vk.com/dev/access_token). [Access rights](https://vk.com/dev/permissions) required: **audio**.
 
 ### Parameters
 
@@ -12,7 +12,7 @@
       <b>audio_id</b>
     </td>
     <td>
-      идентификатор аудиозаписи.
+      Audio file ID.
       <blockquote>
         positive number, <b>required parameter</b>
       </blockquote>
@@ -23,7 +23,7 @@
       <b>owner_id</b>
     </td>
     <td>
-      идентификатор владельца аудиозаписи (пользователь или сообщество).
+      ID of the user or community that owns the audio file.
       <blockquote>
         int (number), <b>required parameter</b>
       </blockquote>
@@ -33,7 +33,7 @@
 
 ### Result
 
-После успешного выполнения возвращает <i>1</i>.
+Returns **1**.
 
 ### Errors
 
