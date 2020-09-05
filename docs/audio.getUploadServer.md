@@ -1,12 +1,12 @@
 ## audio.getUploadServer
 
-Возвращает адрес сервера для [загрузки аудиозаписей]().
+Returns the server address to [upload audio files](https://vk.com/dev/upload_files_2).
 
-> This method can be called with a user token. [Access rights](https://vk.com/dev/permissions) required: **audio**.
+> This method can be called with a [user token](https://vk.com/dev/access_token). [Access rights](https://vk.com/dev/permissions) required: **audio**.
 
 ### Result
 
-После успешного выполнения возвращает объект с единственным полем <b>upload_url</b>.
+Returns an object with an **upload_url** field.
 
 ### Errors
 
