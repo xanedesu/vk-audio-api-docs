@@ -66,7 +66,7 @@ Saves audio files after successful [uploading](https://vk.com/dev/upload_files_2
 
 ### Result
 
-Returns an array of [audio](.) object.
+Returns an array of [audio](https://vk.com/dev/objects/audio) object.
 
 ### Errors
 
