@@ -2,7 +2,7 @@
 
 Deletes an audio album.
 
-> This method can be called with a user token. [Access rights](https://vk.com/dev/permissions) required: **audio**.
+> This method can be called with a [user token](https://vk.com/dev/access_token). [Access rights](https://vk.com/dev/permissions) required: **audio**.
 
 ### Parameters
 
