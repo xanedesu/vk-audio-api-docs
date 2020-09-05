@@ -1,8 +1,8 @@
 ## audio.save
 
-Сохраняет аудиозаписи после успешной [загрузки]().
+Saves audio files after successful [uploading](https://vk.com/dev/upload_files_2?f=8.%20Uploading%20Audio%20Files).
 
-> This method can be called with a user token. [Access rights](https://vk.com/dev/permissions) required: **audio**.
+> This method can be called with a [user token](https://vk.com/dev/access_token). [Access rights](https://vk.com/dev/permissions) required: **audio**.
 
 ### Parameters
 
@@ -12,9 +12,9 @@
       <b>server</b>
     </td>
     <td>
-      параметр, возвращаемый в результате <a href="">загрузки аудиофайла на сервер</a>.
+      This parameter is returned when the audio file is <a href="https://vk.com/dev/upload_files_2?f=8.%20Uploading%20Audio%20Files">uploaded to the server</a>.
       <blockquote>
-        string, <b>required parameter</b>
+        int (number), <b>required parameter</b>
       </blockquote>
     </td>
   </tr>
@@ -23,7 +23,7 @@
       <b>audio</b>
     </td>
     <td>
-      параметр, возвращаемый в результате <a href="">загрузки аудиофайла на сервер</a>.
+      This parameter is returned when the audio file is <a href="https://vk.com/dev/upload_files_2?f=8.%20Uploading%20Audio%20Files">uploaded to the server.</a>.
       <blockquote>
         string, <b>required parameter</b>
       </blockquote>
@@ -34,7 +34,7 @@
       <b>hash</b>
     </td>
     <td>
-      параметр, возвращаемый в результате <a href="">загрузки аудиофайла на сервер</a>.
+      This parameter is returned when the audio file is <a href="https://vk.com/dev/upload_files_2?f=8.%20Uploading%20Audio%20Files">uploaded to the server</a>.
       <blockquote>
         string
       </blockquote>
@@ -45,7 +45,7 @@
       <b>artist</b>
     </td>
     <td>
-      автор композиции. По умолчанию берется из ID3 тегов. 
+      The name of the artist. By default, this is obtained from ID3 tags.
       <blockquote>
         string
       </blockquote>
@@ -56,7 +56,7 @@
       <b>title</b>
     </td>
     <td>
-      название композиции. По умолчанию берется из ID3 тегов.
+      The title of the audio file. By default, this is obtained from ID3 tags.
       <blockquote>
         string
       </blockquote>
@@ -66,7 +66,7 @@
 
 ### Result
 
-Возвращает массив объект загруженной аудиозаписи с полями <b>id, owner_id, artist, title, url</b>.
+Returns an array of [audio](.) object.
 
 ### Errors
 
@@ -76,7 +76,7 @@
       <b>121</b>
     </td>
     <td>
-      Неверный хэш.
+      Invalid hash
     </td>
   </tr>
   <tr>
@@ -84,7 +84,7 @@
       <b>123</b>
     </td>
     <td>
-      Недопустимый формат аудиозаписи.
+      Invalid audio
     </td>
   </tr>
   <tr>
@@ -92,7 +92,7 @@
       <b>270</b>
     </td>
     <td>
-      Аудиозапись была изъята по запросу правообладателя и не может быть загружена.
+      The audio file was removed by the copyright holder and cannot be reuploaded
     </td>
   </tr>
   <tr>
@@ -100,7 +100,7 @@
       <b>301</b>
     </td>
     <td>
-      Недопустимое имя файла.
+      Invalid filename
     </td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@
       <b>302</b>
     </td>
     <td>
-      Недопустимый размер файла.
+      Invalid filesize
     </td>
   </tr>
 </table>
