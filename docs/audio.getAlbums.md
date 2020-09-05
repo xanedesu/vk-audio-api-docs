@@ -1,8 +1,8 @@
 ## audio.getAlbums
 
-Возвращает список альбомов аудиозаписей пользователя или группы.
+Returns a list of audio albums of a user or community.
 
-> This method can be called with a user token. [Access rights](https://vk.com/dev/permissions) required: **audio**.
+> This method can be called with a [user token](https://vk.com/dev/access_token). [Access rights](https://vk.com/dev/permissions) required: **audio**.
 
 ### Parameters
 
@@ -12,7 +12,7 @@
       <b>owner_id</b>
     </td>
     <td>
-      идентификатор пользователя или сообщества, у которого необходимо получить список альбомов с аудио.
+      ID of the user or community that owns the audio file.
       <blockquote>
         int (number), current user id is used by default
       </blockquote>
@@ -23,7 +23,7 @@
       <b>offset</b>
     </td>
     <td>
-      смещение, необходимое для выборки определенного подмножества альбомов.
+      Offset needed to return a specific subset of albums.
       <blockquote>
         positive number
       </blockquote>
@@ -34,7 +34,7 @@
       <b>count</b>
     </td>
     <td>
-      количество альбомов, которое необходимо вернуть.
+      Number of albums to return.
       <blockquote>
         positive number, maximum value <b>100</b>, default <b>50</b>
       </blockquote>
@@ -44,13 +44,10 @@
 
 ### Result
 
-После успешного выполнения возвращает объект, содержащий число результатов в поле <b>count</b> и массив объектов, описывающих альбомы, в поле <b>items</b>. 
-
-Каждый из этих объектов содержит следующие поля: 
-
-* **id** — идентификатор альбома;
-* **owner_id** — идентификатор владельца альбома;
-*  **title** — название альбома.
+Returns the total number of albums and an array of **album** objects, each containing the following fields: 
+* **id** — Audio album owner ID;
+* **owner_id** — Album ID;
+*  **title** — Album title.
 
 ### Errors
 
