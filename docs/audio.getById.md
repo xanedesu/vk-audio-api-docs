@@ -1,6 +1,6 @@
 ## audio.getById
 
-Возвращает информацию об аудиозаписях по их идентификаторам.
+Returns information about audio files by their IDs.
 
 > This method can be called with a user token. [Access rights](https://vk.com/dev/permissions) required: **audio**.
 
@@ -12,9 +12,9 @@
       <b>audios</b>
     </td>
     <td>
-      идентификаторы аудиозаписей, информацию о которых необходимо вернуть, в виде {owner_id}_{audio_id}.
+      Audio file IDs, in the following format: {owner_id}_{audio_id}.
       <blockquote>
-        список слов, разделенных через запятую, <b>обязательный параметр</b>
+        list comma-separated strings, <b>required parameter</b>
       </blockquote>
     </td>
   </tr>
@@ -22,7 +22,7 @@
 
 ### Result
 
-После успешного выполнения возвращает массив объектов [аудиозаписей](https://vk.com/dev/objects/audio).
+Returns a [list](http://vk.com/dev/list) of [audio](https://vk.com/dev/objects/audio) objects.
 
 > NOTE: Links to .mp3 files are bound to an IP address.
 
