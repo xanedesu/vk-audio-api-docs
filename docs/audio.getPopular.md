@@ -2,7 +2,7 @@
 
 Returns a list of audio files from the "Popular".
 
-> This method can be called with a user token. [Access rights](https://vk.com/dev/permissions) required: **audio**.
+> This method can be called with a [user token](https://vk.com/dev/access_token). [Access rights](https://vk.com/dev/permissions) required: **audio**.
 
 ### Parameters
 
@@ -12,9 +12,14 @@ Returns a list of audio files from the "Popular".
       <b>only_eng</b>
     </td>
     <td>
-      <i>1</i> — to return only foreign audio files
-      <br>
-      <i>0</i> — to return all audio files
+      <ul>
+        <li>
+          <i>1</i> — to return only foreign audio files
+        </li>
+        <li>
+          <i>0</i> — to return all audio files
+        </li>
+      </ul>
       <blockquote>
         flag, either <b>1</b> or <b>0</b>
       </blockquote>
