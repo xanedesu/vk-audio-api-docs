@@ -1,8 +1,8 @@
 ## audio.search
 
-Возвращает список аудиозаписей в соответствии с заданным критерием поиска.
+Returns a list of audio files.
 
-> This method can be called with a user token. [Access rights](https://vk.com/dev/permissions) required: **audio**.
+> This method can be called with a [user token](https://vk.com/dev/access_token). [Access rights](https://vk.com/dev/permissions) required: **audio**.
 
 ### Parameters
 
@@ -12,7 +12,7 @@
       <b>q</b>
     </td>
     <td>
-      текст поискового запроса, например, <i>The Beatles</i>.
+      Search query string, (e.g. <i>The Beatles</i>)
       <blockquote>
         string
       </blockquote>
@@ -23,7 +23,7 @@
       <b>auto_complete</b>
     </td>
     <td>
-      Если этот параметр равен <i>1</i>, возможные ошибки в поисковом запросе будут исправлены. Например, при поисковом запросе <i>Иуфедуы</i> поиск будет осуществляться по строке <i>Beatles</i>.
+      1 — to correct for mistakes in the search query (e.g., if you enter Beetles, the system will search for Beatles)
       <blockquote>
         flag, either <b>1</b> or <b>0</b>
       </blockquote>
@@ -34,7 +34,7 @@
       <b>lyrics</b>
     </td>
     <td>
-      Если этот параметр равен <i>1</i>, поиск будет производиться только по тем аудиозаписям, которые содержат тексты.
+      1 — to return only audio files that have associated lyrics
       <blockquote>
         flag, either <b>1</b> or <b>0</b>
       </blockquote>
@@ -45,7 +45,7 @@
       <b>performer_only</b>
     </td>
     <td>
-      Если этот параметр равен <i>1</i>, поиск будет осуществляться только по названию исполнителя.
+      1 — to search only by artist name
       <blockquote>
         flag, either <b>1</b> or <b>0</b>
       </blockquote>
@@ -56,7 +56,18 @@
       <b>sort</b>
     </td>
     <td>
-      Вид сортировки. <i>2</i> — по популярности, <i>1</i> — по длительности аудиозаписи, <i>0</i> — по дате добавления.
+      Sort order:
+      <ul>
+        <li>
+          1 — by duration
+        </li>
+        <li>
+          2 — by popularity
+        </li>
+        <li>
+          0 — by date added
+        </li>
+      </ul>
       <blockquote>
         int (number)
       </blockquote>
@@ -67,7 +78,6 @@
       <b>search_own</b>
     </td>
     <td>
-      <i>1</i> — искать по аудиозаписям пользователя, <i>0</i> — не искать по аудиозаписям пользователя. По умолчанию: <i>0</i>.
       <blockquote>
         flag, either <b>1</b> or <b>0</b>
       </blockquote>
@@ -78,7 +88,7 @@
       <b>offset</b>
     </td>
     <td>
-      смещение, необходимое для выборки определенного подмножества аудиозаписей. По умолчанию: <i>0</i>.
+      Offset needed to return a specific subset of audio files
       <blockquote>
         positive number
       </blockquote>
@@ -89,12 +99,9 @@
       <b>count</b>
     </td>
     <td>
-      количество аудиозаписей, информацию о которых необходимо вернуть. 
+      Number of audio files to return.
       <blockquote>
-        Обратите внимание — даже при использовании параметра offset для получения информации доступны только первые <b>1000</b> результатов.
-      </blockquote>
-      <blockquote>
-        positive number, maximum value <b>300</b>, default <b>30</b>
+        positive number, default <b>30</b>, maximum value <b>300</b>
       </blockquote>
     </td>
   </tr>
